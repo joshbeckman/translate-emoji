@@ -1,0 +1,19 @@
+{
+  "name": "translate-emoji",
+  "version": "0.0.1",
+  "description": "Translate emoji characters to text",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NarroApp/translate-emoji.git"
+  },
+  "author": "email@andjosh.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NarroApp/translate-emoji/issues"
+  },
+  "homepage": "https://github.com/NarroApp/translate-emoji#readme"
+}
