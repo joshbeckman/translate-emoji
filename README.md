@@ -15,10 +15,10 @@ var translateEmoji = require('translate-emoji'),
 testString = '📰 I had a nice day at work! 👩';
 
 console.log(translateEmoji.translate(testString));
-// (newspaper) Have a nice day at work! (woman)
+// (newspaper) I had a nice day at work! (woman)
 
 console.log(translateEmoji.translate(testString, true));
-// Have a nice day at work!
+// I had a nice day at work!
 
 console.log(translateEmoji.containsEmoji(testString));
 // true
