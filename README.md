@@ -2,6 +2,8 @@
 
 You know how sometimes you read English and it has all these non-word characters (emoji)? Yeah, `translate-emoji` fixes that.
 
+[![NPM](https://nodei.co/npm/translate-emoji.png)](https://nodei.co/npm/translate-emoji/)
+
 ## Install
 ~~~
 npm install translate-emoji
