@@ -10,26 +10,28 @@ var emojilib = require('emojilib'),
  * @param {boolean} remove Remove the emoji without replacement?
  * @return {string} The resulting text
  */
-function translate(string, remove) {
+function translate(string, remove = false) {
     var i,
         translated,
         char,
-        emoji;
+        emoji,
+        text;
 
     translated = string;
-    for (i in emojilib.lib) {
-        emoji = emojilib.lib[i];
-        char = '\\' + emoji.char;
+    for (i in emojilib) {
+        emoji = emojilib[i];
+        char = '\\' + i;
+        text = emoji[0];
         if (string.match(char)) {
             if (remove) {
                 translated = translated.replace(
-                    emoji.char,
+                    i,
                     ''
                 );
             } else {
                 translated = translated.replace(
-                    emoji.char,
-                    '(' + i.replace('_', ' ') + ')'
+                    i,
+                    '(' + text.replace('_', ' ') + ')'
                 );
             }
         }
@@ -68,9 +70,9 @@ function buildRegexes() {
         count = 0,
         i;
 
-    for (i in emojilib.lib) {
-        if (emojilib.lib[i].char) {
-            array.push('\\' + emojilib.lib[i].char);
+    for (i in emojilib) {
+        if (emojilib[i]) {
+            array.push('\\' + i);
             count++;
             if (!(count % 200)) {
                 regexes.push(array.join('|'));

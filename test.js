@@ -19,9 +19,9 @@ describe('translate-emoji', function() {
         it('should translate emoji',
         function () {
             assert.equal(
-                '(newspaper) I had a nice day at work! (woman)',
+                '(newspaper) I had a nice day at work! (woman) (face holding back tears)',
                 translateEmoji.translate(
-                    '📰 I had a nice day at work! 👩'
+                    '📰 I had a nice day at work! 👩 🥹'
                 )
             );
         });

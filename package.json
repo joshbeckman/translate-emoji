@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/NarroApp/translate-emoji#readme",
   "dependencies": {
-    "emojilib": "^2.0.2"
+    "emojilib": "^3.0.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
